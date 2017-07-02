@@ -1,10 +1,6 @@
-import {Component, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
-
-@Component({
-  providers: [Http]
-})
 
 @Injectable()
 export class TestAPI {

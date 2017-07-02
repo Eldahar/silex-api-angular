@@ -3,7 +3,6 @@ import {TestAPI} from './shared/testapi';
 
 @Component({
   selector: 'app-root',
-  providers: [TestAPI],
   templateUrl: 'app.component.html',
 })
 

@@ -16,8 +16,10 @@ export class AppComponent {
   }
 
   test() {
-    this.apiService.first().subscribe(data => this.first = data);
-    this.apiService.second().subscribe(data => this.second = data);
-    this.apiService.third().subscribe(data => this.third = data);
+    for (var i = 0; i < 1000; i++) {
+      this.apiService.first().subscribe(data => this.first = data);
+      this.apiService.second().subscribe(data => this.second = data);
+      this.apiService.third().subscribe(data => this.third = data);
+    }
   }
 }
